@@ -10,7 +10,7 @@
 
 [유튜브 영상](https://www.youtube.com/watch?v=slkgcQCXEq4)
 
-1. 클레이튼에서 제공하는 [소스](https://github.com/klaytn/klaytn-contracts)를
+1. [클레이튼에서 제공하는 소스](https://github.com/klaytn/klaytn-contracts)를
    가져와서 사용하는 파일만 남기고 모두 제거합니다.
 2. 간단한 방식으로 지갑을 만들어냅니다.
 3. 바오밥넷(테스트서버) 에서 테스트 코인을 얻습니다.
