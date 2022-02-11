@@ -10,6 +10,8 @@
 
 [유튜브 영상](https://www.youtube.com/watch?v=slkgcQCXEq4)
 
+요약: 초기 셋팅과 수도꼭지를 이용해 테스트 코인을 받고 블로체인과 통신해서 잔고를 확인합니다.
+
 1. [클레이튼에서 제공하는 소스](https://github.com/klaytn/klaytn-contracts)를
    가져와서 사용하는 파일만 남기고 모두 제거합니다.
 2. 간단한 방식으로 지갑을 만들어냅니다.
@@ -22,6 +24,9 @@
 #### klaytn-02
 
 [유튜브 영상](https://youtu.be/vpKJtg4cLRA)
+
+요약: vscode 의 도움될만한 플러그인을 설치하고
+스마트컨트렉트를 블록체인에 배포합니다.
 
 1. klaytn-01 의 소스를 가져와 편집했습니다.
 2. 사용하시려면 터미널을 여시고 `npm install` 을 입력해서 모듈을 설치해주세요.
