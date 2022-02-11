@@ -1,0 +1,20 @@
+{
+  "name": "klaytn-contract",
+  "version": "1.0.0",
+  "description": "various contracts for Klaytn",
+  "author": "Klaytn",
+  "license": "MIT",
+  "scripts": {
+    "build": "truffle compile",
+    "deploy:baobab": "truffle deploy --network baobab"
+  },
+  "dependencies": {
+    "caver-js": "^1.5.0",
+    "truffle-hdwallet-provider-klaytn": "^1.4.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "truffle": "^5.1.22"
+  }
+}
