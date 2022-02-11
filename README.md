@@ -19,6 +19,17 @@
 다른 학습영상도 `klaytn-01` 을 기준으로 내용을 덧붙여서 설명드립니다.
 영상에서는 `node.js` 와 `vscode` 설치과정정이 없습니다.
 
+#### klaytn-02
+
+[유튜브 영상](https://youtu.be/vpKJtg4cLRA)
+
+1. klaytn-01 의 소스를 가져와 편집했습니다.
+2. 사용하시려면 터미널을 여시고 `npm install` 을 입력해서 모듈을 설치해주세요.
+3. `secret.js.template` 을 복사해서 `secret.js` 파일을 만드세요.
+4. `secret.js` 을 수정합니다. pkey 에 지갑의 비밀키를 addr 에 지갑의 주소를 넣으세요.
+5. `npm run build` 명령어는 솔리디티 소스를 컴파일 합니다.
+6. `npm run deploy:baobab` 명령어는 솔리디티 소스를 baobab 테스트넷에 배포합니다.
+
 ## 링크
 
 - [이 소스가 있는 곳 github](https://github.com/GoToTheMetaverse/klay-tutorial-v2)
