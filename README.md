@@ -51,6 +51,7 @@
 클레이튼 블록체인 자습서 02 - 스마트컨트랙트 올리고 호출 / 실패해도 수수료가? / require 와 return 차이 / 호출수 제한하기 원리 (nft 대량 민팅용)
 
 요약:
+
 - 스마트컨트랙트 함수를 call() 을 이용해 호출해봅니다.
 - send() 스마트컨트랙 내부 변수를 수정해봅니다.
 - call() 과 send() 의 차이를 알아봅니다.
@@ -59,6 +60,25 @@
 - klayscope 를 확인해봅니다.
 - 스마트컨트랙트 를 다시 배포해봅니다. --reset 옵션
 - 스마트컨트랙트 함수 호출 수를 제한해 봅니다. 수량이 한정적인 NFT 대량 민팅할때
+
+### klaytn-etc-opensea-about
+
+[유튜브 영상] (https://youtu.be/2cl8GFFQ4Y8)
+
+제목:
+오픈씨 자습서 01 - about 이란게 있습니다.
+
+요약:
+- 초보용 영상이 아닙니다.
+- 실타래를 참고합니다.
+- 스마트컨트랙트와 계정을 연동하는 UI 가 있습니다.
+- cypress 메인넷에스마트컨트랙트를 배포합니다.
+- kas 인증키 가 필요합니다. [영상](https://youtu.be/TyYV7h9knkw?t=1264)
+
+링크:
+opensea 참고 문서 : https://docs.opensea.io/docs/contract-level-metadata
+json editor : https://jsoneditoronline.org/
+opensea 결과물: https://opensea.io/collection/coding-tutorial-opensea-about
 
 ## 링크
 
