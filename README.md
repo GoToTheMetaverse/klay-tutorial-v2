@@ -63,12 +63,13 @@
 
 ### klaytn-etc-opensea-about
 
-[유튜브 영상] (https://youtu.be/2cl8GFFQ4Y8)
+[유튜브 영상] (https://www.youtube.com/watch?v=Wxyu2kfwAjA)
 
 제목:
 오픈씨 자습서 01 - about 이란게 있습니다.
 
 요약:
+
 - 초보용 영상이 아닙니다.
 - 실타래를 참고합니다.
 - 스마트컨트랙트와 계정을 연동하는 UI 가 있습니다.
