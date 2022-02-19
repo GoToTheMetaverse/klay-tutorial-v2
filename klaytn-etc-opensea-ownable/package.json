@@ -1,0 +1,25 @@
+{
+  "name": "klaytn-etc-opensea-ownable",
+  "version": "1.0.0",
+  "description": "CodingTutorial ownable test",
+  "author": "CodingTutorial",
+  "license": "MIT",
+  "scripts": {
+    "version": "truffle version",
+    "build": "truffle compile",
+    "deploy:baobab": "truffle deploy --network baobab",
+    "deploy:cypress": "truffle deploy --network cypress",
+    "reset-deploy:baobab": "truffle deploy --network baobab --reset",
+    "reset-deploy:cypress": "truffle deploy --network cypress --reset"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "caver-js": "^1.6.8",
+    "truffle-hdwallet-provider-klaytn": "^1.4.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "truffle": "^5.1.22"
+  }
+}
