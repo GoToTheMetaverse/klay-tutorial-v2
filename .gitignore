@@ -106,3 +106,4 @@ dist
 #
 secret.js
 package-lock.json
+/klaytn-etc-opensea-ownable/contracts/KIP17OwnableFlattened.sol

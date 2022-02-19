@@ -1,4 +1,4 @@
-const { pkey, kas_project_auth } = require("./secret.js");
+const { pkey, pkey_cypress, kas_project_auth } = require("./secret.js");
 const HDWalletProvider = require("truffle-hdwallet-provider-klaytn");
 const Caver = require("caver-js");
 
@@ -25,7 +25,7 @@ module.exports = {
           keepAlive: false,
         };
         return new HDWalletProvider(
-          pkey,
+          pkey_cypress,
           new Caver.providers.HttpProvider(
             "https://node-api.klaytnapi.com/v1/klaytn",
             option

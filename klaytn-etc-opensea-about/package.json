@@ -5,6 +5,7 @@
   "author": "Klaytn",
   "license": "MIT",
   "scripts": {
+    "version": "truffle version",
     "build": "truffle compile",
     "deploy:baobab": "truffle deploy --network baobab",
     "deploy:cypress": "truffle deploy --network cypress",
@@ -17,6 +18,6 @@
   "devDependencies": {
     "prettier": "^2.5.1",
     "prettier-plugin-solidity": "^1.0.0-beta.19",
-    "truffle": "^5.1.22"
+    "truffle": "5.1.22"
   }
 }
