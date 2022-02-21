@@ -71,43 +71,30 @@
 - 스마트컨트랙트 를 다시 배포해봅니다. --reset 옵션
 - 스마트컨트랙트 함수 호출 수를 제한해 봅니다. 수량이 한정적인 NFT 대량 민팅할때
 
-### klaytn-etc-opensea-about
-
-[유튜브 영상](https://www.youtube.com/watch?v=Wxyu2kfwAjA)
-
-선행작업:
-
-1. secret.js.template 파일을 이용해서 secret.js 파일을 만드세요
-2. secret.js 파일에 지갑 주소와 비밀키를 입력합니다.
-3. kas_project_auth 값을 입력해야 메인넷에 배포 가능합니다. [영상](https://youtu.be/TyYV7h9knkw?t=1264) 참고
-
-요약:
-
-- 초보용 영상이 아닙니다.
-- 실타래를 참고합니다.
-- 스마트컨트랙트와 계정을 연동하는 UI 가 있습니다.
-- cypress 메인넷에스마트컨트랙트를 배포합니다.
-- kas 인증키 가 필요합니다. [영상](https://youtu.be/TyYV7h9knkw?t=1264)
-
-참고 링크:
-opensea 참고 문서 : https://docs.opensea.io/docs/contract-level-metadata
-json editor : https://jsoneditoronline.org/
-opensea 결과물: https://opensea.io/collection/coding-tutorial-opensea-about
-
 ### klaytn-04
 
-[유튜브 영상](https://youtube/)
+[유튜브 영상](https://www.youtube.com/watch?v=bE3R9SJNWiw)
 
 선행작업:
 
 1. secret.js.template 파일을 이용해서 secret.js 파일을 만드세요
 2. secret.js 파일에 지갑 주소와 비밀키를 입력합니다.
-3. kas console 에서 kas_project_auth 키를 받습니다.
+3. 테스트할때는 pkey_cypress 와 kas_project_auth 는 사용하지 않습니다.
 
 요약:
 
-- 스마트컨트렉트에 클레이 보관
-- 꺼내서 유저에게 보내기
+- 스마트컨트렉트에 지갑이 있습니다.
+- 입출금을 해봅시다.
+- 출금은 나만 되도록 고칩니다.
+- npm 스크립트를 UI 로 쉽게 실행하기
+- ligature (fira code) 라는게 있...
+
+### klaytn-etc-opensea-about
+
+이 강좌는 삭제 되었습니다.
+
+klaytn-etc-opensea-ownable 강좌가 훨씬 유용합니다.
+[링크](https://www.youtube.com/watch?v=J2kdqKOEd-0)
 
 ### klaytn-etc-opensea-ownable
 
