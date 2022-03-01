@@ -1,0 +1,22 @@
+{
+  "name": "klay-04",
+  "version": "1.0.0",
+  "description": "klay-04 tutorial",
+  "author": "Klaytn",
+  "license": "MIT",
+  "scripts": {
+    "version": "truffle version",
+    "build": "truffle compile",
+    "deploy:baobab": "truffle deploy --network baobab",
+    "reset-deploy:baobab": "truffle deploy --network baobab --reset"
+  },
+  "dependencies": {
+    "caver-js": "^1.5.0",
+    "truffle-hdwallet-provider-klaytn": "^1.4.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "truffle": "5.1.22"
+  }
+}
