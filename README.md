@@ -89,6 +89,41 @@
 - npm 스크립트를 UI 로 쉽게 실행하기
 - ligature (fira code) 라는게 있...
 
+### klaytn-05
+
+[유튜브 영상](https://youtu.be/pF5-foXc_kw)
+
+선행작업:
+
+1. secret.js.template 파일을 이용해서 secret.js 파일을 만드세요
+2. secret.js 파일에 지갑 주소와 비밀키를 입력합니다.
+3. 이번부터는 secret.js 의 위치를 프로젝트 폴더의 밖깥쪽에 둡니다.
+   ../secret.js 입니다.
+   예를 들어 klay-tutorial-v2 여기요
+4. 테스트할때는 pkey_cypress 와 kas_project_auth 는 사용하지 않습니다.
+
+요약:
+
+- 입출금 기능은 그대로 입니다.
+- 게임 배팅액을 set / get 함수를 만듭니다.
+- 게임 플레이 함수를 만듭니다.
+- event 를 사용해봅니다.
+- 테스트를 해봅니다.
+- event 로그를 검색해봅니다.
+
+### klaytn-05-svelte
+
+이 프프로젝트는 svelte 로 가위바위보 게임을 만들려고 했으나
+caver-js 가 import 되지 않는 현상이 있어서 포기하고
+`klaytn-05-vue` 로 전환했습니다.
+
+
+
+### klaytn-05-vue
+
+klaytn-05 로 가뷔바위보 게임을 진행할 수 있는 프로젝트입니다.
+tailwind css 를 사용합니다.
+
 ### klaytn-etc-opensea-about
 
 이 강좌는 삭제 되었습니다.
