@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tw-red {
+	@apply p-2 m-2 rounded-lg shadow-lg bg-red-600 text-white;
+}
