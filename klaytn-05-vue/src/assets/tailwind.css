@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tw_btn {
+  @apply px-4 py-1 rounded-full bg-indigo-600 text-white;
+}
