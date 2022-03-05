@@ -91,7 +91,7 @@
 
 ### klaytn-05
 
-[유튜브 영상](https://youtu.be/pF5-foXc_kw)
+[영상](https://youtu.be/pF5-foXc_kw)
 
 선행작업:
 
@@ -111,18 +111,50 @@
 - 테스트를 해봅니다.
 - event 로그를 검색해봅니다.
 
+### klaytn-05-vue
+
+#### 첫번째 영상
+
+[영상](https://www.youtube.com/watch?v=vrWV66J9B0g)
+
+이 영상은 카이카스 로그인하기 까지만 진행했습니다.
+
+klaytn-05 로 가뷔바위보 게임을 진행할 수 있는 프로젝트입니다.
+vue 와 tailwind 사용한 웹 페이지를 개발합니다.
+
+이 프로젝트는 여러번에 끊어서 만들어졌기 때문에
+제일 마지막 영상에 맞게 동작하게됩니다.
+
+`src/views/MyGameView.vue` 의 코드를 참고하세요
+해당영상의 코드를 동작시켜보실려면
+`src/router/index.js` 에서 `MyGameView.vue` 를 검색해서
+주석을 해제 하셔야합니다.
+구버전인데 굳이 돌려보실 분은 없을꺼 같아서 이어서 짜버렸습니다.
+
+#### 두번째 영상
+
+[영상](https://youtu.be/wXUi4CsAf8E)
+
+이 영상은 첫번째 영상에서 이어서 진행했으며
+`play_game()` 까지 호출 해서 결과를 출력합니다.
+
+`src/views/MyGameView2.vue` 의 코드를 참고하세요
+해당영상의 코드를 동작시켜보실려면
+`src/router/index.js` 에서 `MyGameView2.vue` 를 검색해서
+주석을 해제 하셔야합니다.
+
 ### klaytn-05-svelte
 
 이 프프로젝트는 svelte 로 가위바위보 게임을 만들려고 했으나
 caver-js 가 import 되지 않는 현상이 있어서 포기하고
 `klaytn-05-vue` 로 전환했습니다.
 
+#### caver-js import 문제 해결중
 
-
-### klaytn-05-vue
-
-klaytn-05 로 가뷔바위보 게임을 진행할 수 있는 프로젝트입니다.
-tailwind css 를 사용합니다.
+- npm install caver-js 로는 실패했습니다.
+- app.html 에 cdn 에서 받아온 링크를 불러오고
+  그걸 window.Caver 를 불러서 사용하면 되긴하지만
+  클레이튼에서 관리하는 링크가 아니기 때문에 정상적인 방법인지 잘 모르겠습니다.
 
 ### klaytn-etc-opensea-about
 
