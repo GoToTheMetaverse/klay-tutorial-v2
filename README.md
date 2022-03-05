@@ -117,6 +117,8 @@
 
 [영상](https://www.youtube.com/watch?v=vrWV66J9B0g)
 
+`yarn install` 로 설치하셔야 합니다.
+
 이 영상은 카이카스 로그인하기 까지만 진행했습니다.
 
 klaytn-05 로 가뷔바위보 게임을 진행할 수 있는 프로젝트입니다.
@@ -134,6 +136,8 @@ vue 와 tailwind 사용한 웹 페이지를 개발합니다.
 #### 가위바위보 03 영상 (vue 의 두번째 영상)
 
 [영상](https://youtu.be/wXUi4CsAf8E)
+
+`yarn install` 로 설치하셔야 합니다.
 
 이 영상은 첫번째 영상에서 이어서 진행했으며
 `play_game()` 까지 호출 해서 결과를 출력합니다.
