@@ -6,7 +6,8 @@ const routes = [
     path: "/",
     name: "home",
     // component: HomeView,
-    component: () => import("@/views/MyGameView.vue"),
+    // component: () => import("@/views/MyGameView.vue"),
+    component: () => import("@/views/MyGameView2.vue"),
   },
   // {
   //   path: "/about",
