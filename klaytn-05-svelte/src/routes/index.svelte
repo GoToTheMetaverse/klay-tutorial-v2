@@ -1,10 +1,5 @@
 <script>
-	// import MyGame from '../MyGame.json';
-	// console.log('MyGame', MyGame);
-
-	import Caver from 'caver-js';
-	// let Caver = null;
-	console.log('Caver', Caver);
+	import MyGame from '../MyGame.json';
 
 	let caver = null;
 	let contract;
