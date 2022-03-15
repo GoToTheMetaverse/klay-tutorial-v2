@@ -147,6 +147,20 @@ vue 와 tailwind 사용한 웹 페이지를 개발합니다.
 `src/router/index.js` 에서 `MyGameView2.vue` 를 검색해서
 주석을 해제 하셔야합니다.
 
+#### 가위바위보 04 영상 (마무리 작업 및 웹 배포)
+
+[영상](https://www.youtube.com/watch?v=iZZy5aETos8)
+
+소스코드는 https://github.com/GoToTheMetaverse/klay-tutorial-v2
+의 klaytn-05-vue 폴더 입니다.
+
+뷰 소스코드는
+klaytn-05-vue/src/views/MyGameView3.vue
+파일 입니다.
+
+웹에 배포한 결과물
+https://klaytngame-1.gunillee.repl.co/
+
 ### klaytn-05-svelte
 
 이 프프로젝트는 svelte 로 가위바위보 게임을 만들려고 했으나
