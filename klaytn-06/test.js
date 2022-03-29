@@ -35,6 +35,8 @@ async function test() {
   console.log("totalSupply", ret);
   ret = await contract.methods.balanceOf(addr).call();
   console.log("mynft balance", ret);
+  ret = await contract.methods.tokenURI(1).call();
+  console.log("tokenUri", ret);
 
   ret = await contract.methods.getData().call();
   const fee = ret.fee;

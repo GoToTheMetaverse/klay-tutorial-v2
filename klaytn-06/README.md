@@ -25,6 +25,8 @@ KIP17OwnableFlattened.sol 파일
 
 # 기타
 
+[영상강좌의 주소](https://youtu.be/RqZ4pUPF3Rc)
+
 [이곳의 주소](https://github.com/GoToTheMetaverse/klay-tutorial-v2/tree/main/klaytn-06)
 
 [node 14.7.3 다운로드](https://nodejs.org/download/release/v14.17.3/)
