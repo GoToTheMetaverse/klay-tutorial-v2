@@ -7,14 +7,13 @@
   "scripts": {
     "version": "truffle version",
     "build": "truffle compile",
-    "deploy:baobab": "truffle deploy --network baobab",
-    "deploy:cypress": "truffle deploy --network cypress",
-    "reset-deploy:baobab": "truffle deploy --network baobab --reset",
-    "reset-deploy:cypress": "truffle deploy --network cypress --reset"
+    "deploy:baobab": "truffle deploy --network baobab --reset",
+    "deploy:cypress": "truffle deploy --network cypress"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.5.0",
     "caver-js": "^1.6.8",
+    "jimp": "^0.16.1",
     "truffle-hdwallet-provider-klaytn": "^1.4.2"
   },
   "devDependencies": {

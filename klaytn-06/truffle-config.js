@@ -1,4 +1,4 @@
-const { pkey, pkey_cypress, kas_project_auth } = require("./truffle-secret.js");
+const { pkey, pkey_cypress, kas_project_auth } = require("./secret.js");
 const HDWalletProvider = require("truffle-hdwallet-provider-klaytn");
 const Caver = require("caver-js");
 
