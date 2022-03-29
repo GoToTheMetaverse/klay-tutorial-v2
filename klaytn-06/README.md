@@ -15,7 +15,15 @@
 
 7. npm run build
 
-# 출처
+8. 이후에는 영상에서 설명
+
+# 출처표시
 
 CodingTutorialOpenSeaOwnable.sol 파일  
 https://github.com/coinResearch2021/nfttutorial
+
+# 기타
+
+[이곳의 주소](https://github.com/GoToTheMetaverse/klay-tutorial-v2/tree/main/klaytn-06)
+
+[node 14.7.3 다운로드](https://nodejs.org/download/release/v14.17.3/)
