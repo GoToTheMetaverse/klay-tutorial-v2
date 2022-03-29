@@ -19,8 +19,9 @@
 
 # 출처표시
 
-CodingTutorialOpenSeaOwnable.sol 파일  
-https://github.com/coinResearch2021/nfttutorial
+KIP17OwnableFlattened.sol 파일  
+[유튜브 코인리서치 채널](https://www.youtube.com/channel/UCmJDGJ237z9CX3WFudICccQ)  
+소스위치: [github](https://github.com/coinResearch2021/nfttutorial)
 
 # 기타
 

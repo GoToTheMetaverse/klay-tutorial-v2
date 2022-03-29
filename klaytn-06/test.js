@@ -1,6 +1,5 @@
 const secret = require("./secret.js");
-const CONTRACT = require("./build/contracts/CodingTutorialOpenSeaOwnable.json");
-// const CONTRACT = require("./build/contracts-v1/CodingTutorialOpenSeaOwnable.json");
+const CONTRACT = require("./build/contracts/MyNFT.json");
 
 const rpcURL = "https://api.baobab.klaytn.net:8651";
 const networkID = "1001";
@@ -16,23 +15,35 @@ const acc = caver.klay.accounts.wallet.getAccount(0);
 const addr = acc.address;
 console.log("addr", addr);
 
-// const deplyedNetworkAddress = CONTRACT.networks[networkID].address;
-// const contract = new caver.klay.Contract(CONTRACT.abi, deplyedNetworkAddress);
-// console.log("contract", deplyedNetworkAddress);
+const deplyedNetworkAddress = CONTRACT.networks[networkID].address;
+const contract = new caver.klay.Contract(CONTRACT.abi, deplyedNetworkAddress);
+console.log("contract", deplyedNetworkAddress);
 
 async function test() {
-  let peb;
   let ret;
 
-  // let uid = 1;
-  // await contract.methods
-  //   .mint(uid, "https://mynft.gunillee.repl.co/res-v3/nft-" + uid + ".json")
-  //   .send({
-  //     from: addr,
-  //     gas: "2000000",
-  //   });
+  ret = await caver.klay.getBalance(addr);
+  console.log("getBalance", ret);
+  ret = await contract.methods.totalSupply().call();
+  console.log("totalSupply", ret);
+  ret = await contract.methods.balanceOf(addr).call();
+  console.log("mynft balance", ret);
 
-  peb = await caver.klay.getBalance(addr);
-  console.log("peb", peb);
+  ret = await contract.methods.getData().call();
+  const fee = ret.fee;
+  const count = ret.count;
+  console.log("fee", fee);
+  console.log("count", count);
+
+  // await contract.methods.mintGeust().send({
+  //   from: addr,
+  //   gas: "20000000",
+  //   value: fee,
+  // });
+
+  // await contract.methods.setCount(3).send({
+  //   from: addr,
+  //   gas: "20000000",
+  // });
 }
 test();
