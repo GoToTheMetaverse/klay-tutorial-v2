@@ -3,6 +3,10 @@ const CONTRACT = require("./build/contracts/MyNFT.json");
 
 const rpcURL = "https://api.baobab.klaytn.net:8651";
 const networkID = "1001";
+
+// const rpcURL = "https://public-node-api.klaytnapi.com/v1/cypress";
+// const networkID = "8217";
+
 const ADDR = secret.addr;
 const PKEY = secret.pkey;
 
@@ -23,7 +27,10 @@ async function test() {
   let ret;
 
   ret = await caver.klay.getBalance(addr);
-  console.log("getBalance", ret);
+  console.log("my getBalance", ret);
+  ret = await caver.klay.getBalance(deplyedNetworkAddress);
+  const c_balance = ret;
+  console.log("contract getBalance", ret);
   ret = await contract.methods.totalSupply().call();
   console.log("totalSupply", ret);
   ret = await contract.methods.balanceOf(addr).call();
@@ -41,7 +48,12 @@ async function test() {
   //   value: fee,
   // });
 
-  // await contract.methods.setCount(3).send({
+  // await contract.methods.setCount(10).send({
+  //   from: addr,
+  //   gas: "20000000",
+  // });
+
+  // await contract.methods.withdraw(c_balance).send({
   //   from: addr,
   //   gas: "20000000",
   // });

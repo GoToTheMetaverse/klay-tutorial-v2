@@ -30,7 +30,7 @@ contract MyNFT is KIP17TokenOwnable {
     data.count = _count;
   }
 
-  function deposit() external payable {}
+  // function deposit() external payable {}
 
   function withdraw(uint256 peb) external payable {
     uint256 balance = address(this).balance;
