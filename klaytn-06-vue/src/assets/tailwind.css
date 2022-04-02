@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-.tw_btn {
-  @apply px-4 py-1 rounded-full bg-indigo-600 text-white;
+/*
+ * Jeju Gothic (Korean) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: "Jeju Gothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot?#iefix)
+      format("embedded-opentype"),
+    url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff)
+      format("woff"),
+    url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf)
+      format("truetype");
+}
+
+h1 {
+  font-size: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-weight: 1000;
+}
+
+h2 {
+  font-size: 1.25em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-weight: 1000;
+}
+
+h3 {
+  font-size: 1.125em;
+  padding-top: 0.125em;
+  padding-bottom: 0.125em;
+  font-weight: 1000;
+}
+
+.tw-desc {
+  @apply text-gray-400;
 }
