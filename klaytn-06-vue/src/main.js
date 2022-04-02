@@ -6,6 +6,7 @@ import "./assets/tailwind.css";
 import { marked } from "marked";
 
 const method_name = "mintGeust";
+// const is_mainnet = true;
 const is_mainnet = false;
 const title = marked(
   `
@@ -19,7 +20,14 @@ const title = marked(
 
 const footer = marked(
   `
-좋아요, 구독 감사합니다.
+하단부 메세지 입니다.  
+좋아요, 구독 감사합니다.  
+
+<div class="flex justify-end space-x-2">
+<a href="https://www.youtube.com/channel/UCj8eNn2MxSUB1wf5y6FR1WQ" target="_blank">
+  <img class="w-8 h-8" src="/img/icons/codingtutorial_64x64.png"/>
+</a>
+</div>
 `.trim()
 );
 
