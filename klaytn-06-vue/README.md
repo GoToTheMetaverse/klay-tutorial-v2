@@ -14,6 +14,14 @@
       코딩자습서 유튜브 링크가 들어있습니다.
       보기 허전시다면 넣어주셔도 좋습니다.
 
+   5. 이미지를 수정하세요
+      /src/assets/logo.png : 상단에 이미지
+      /src/assets/machine.png : 화살표가 없는 자판기
+      /src/assets/machine-arrow.png : 화살표가 있는 자판기
+      /src/assets/machine-empty.png : 모두 다 팔린상태 자판기
+      /public/favicon.ico : 파비콘, 웹브라우저에서 표시됩니다.
+      /public/img/icons/android-chrome-192x192.png : 크롬에서 표시됩니다.
+
 3. `npm install -g yarn` 으로 yarn 을 설치합니다.
 4. `yarn install` 로 모듈을 설치합니다.
 5. `yarn serve` 로 웹페이지를 테스트해보실 수 있습니다.

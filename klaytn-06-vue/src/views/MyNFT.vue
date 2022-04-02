@@ -314,16 +314,14 @@ export default {
     const onMinting = async () => {
       console.log("onMinting");
 
-      let whitelist = [
-        "0x1e0A33d97f7793035704F5B0d896c631fb47BbE4", // bao-sub
-        "0x65EfC5ce9D6aB663365ac5452f52168f227a5d93", // bao-main
-      ];
-      let is_white = whitelist.indexOf(data.wallet_address);
-      if (is_white < 0) {
-        data.error_msg = "등록되지 않은 지갑 주소입니다.";
-        return;
-      }
-      console.log("whitelist exists", data.wallet_address, is_white);
+      // let whitelist = [
+      //   "0x1e0A33d97f7793035704F5B0d896c631fb47BbE4", // bao-sub
+      //   "0x65EfC5ce9D6aB663365ac5452f52168f227a5d93", // bao-main
+      // ];
+      // if (whitelist.indexOf(data.wallet_address) < 0) {
+      //   data.error_msg = "등록되지 않은 지갑 주소입니다.";
+      //   return;
+      // }
 
       data.error_msg = "";
       if (!data.is_wallet_connect) {
