@@ -23,9 +23,10 @@ const footer = marked(
 하단부 메세지 입니다.  
 좋아요, 구독 감사합니다.  
 
-<div class="flex justify-end space-x-2">
+<div class="flex justify-end items-end space-x-2">
+<div class="text-sm text-gray-400">supported by</div>
 <a href="https://www.youtube.com/channel/UCj8eNn2MxSUB1wf5y6FR1WQ" target="_blank">
-  <img class="w-8 h-8" src="/img/icons/codingtutorial_64x64.png"/>
+  <img class="w-6 h-6 opacity-50" src="/img/icons/codingtutorial_64x64.png"/>
 </a>
 </div>
 `.trim()
