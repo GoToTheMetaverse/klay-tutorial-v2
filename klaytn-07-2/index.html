@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a
+      href="https://discord.com/api/oauth2/authorize?client_id=963338592489472010&redirect_uri=http%3A%2F%2Flocalhost%3A53134&response_type=code&scope=identify"
+      >인증링크</a
+    >
+    <div id="info">Hoi!</div>
+    <a id="login" style="display: none" href="your-oauth2-URL-here"
+      >Identify Yourself</a
+    >
+    <script>
+      window.onload = async () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get("code");
+        console.log("code", code);
+
+        const CLIENT_ID = "963338592489472010";
+        const CLIENT_SECRET = "q5bwgiJHQBwnJYYhTxaRysruXZOEPf2t";
+        const REDIRECT_URL = "http://localhost:53134";
+
+        const url = "https://discord.com/api/oauth2/token";
+        const oauthResult = await fetch(url, {
+          method: "POST",
+          body: new URLSearchParams({
+            client_id: CLIENT_ID,
+            client_secret: CLIENT_SECRET,
+            code,
+            grant_type: "authorization_code",
+            redirect_uri: REDIRECT_URL,
+            scope: "identify",
+          }),
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        });
+        console.log("oauthResult", oauthResult);
+
+        const oauthData = await oauthResult.json();
+        console.log("oauthData", oauthData);
+
+        const userResult = await fetch("https://discord.com/api/users/@me", {
+          headers: {
+            authorization: `${oauthData.token_type} ${oauthData.access_token}`,
+          },
+        });
+
+        const userData = await userResult.json();
+        console.log("userResult", userData);
+      };
+    </script>
+  </body>
+</html>
