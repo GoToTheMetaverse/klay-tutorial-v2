@@ -7,18 +7,91 @@
     <title>Document</title>
   </head>
   <body>
-    <a
-      href="https://discord.com/api/oauth2/authorize?client_id=963338592489472010&redirect_uri=http%3A%2F%2Flocalhost%3A53134&response_type=code&scope=identify"
-      >인증링크</a
-    >
-    <div id="info">Hoi!</div>
+    <div>
+      <a
+        href="https://discord.com/api/oauth2/authorize?client_id=963338592489472010&redirect_uri=http%3A%2F%2Flocalhost%3A53134&response_type=code&scope=identify"
+        >인증링크</a
+      >
+    </div>
+    <button id="btn_wallet" onclick="onClick()">지갑 연동 하기</button>
+    <div>
+      <div>지갑주소:</div>
+      <div id="wallet_addr"></div>
+    </div>
+    <div>
+      <div>NFT 보유수:</div>
+      <div id="nft_count"></div>
+    </div>
     <a id="login" style="display: none" href="your-oauth2-URL-here"
       >Identify Yourself</a
     >
+    <button id="btn_discord_connect" disabled onclick="onDiscordConnect()">
+      디스코드와 지갑 연결
+    </button>
+
     <script>
+      let wallet_addr = null;
+      let discord_user_id = null;
+
+      async function onDiscordConnect() {
+        console.log("onDiscordConnect");
+
+        const url = "/api_discord_connect";
+        // const url = "http://localhost:53134/api_wallet";
+        const res = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            wallet_addr,
+            discord_user_id,
+          }),
+        });
+        const resData = await res.json();
+        console.log("resData", resData);
+      }
+
+      async function onClick() {
+        console.log("onClick");
+
+        let addr = null;
+        try {
+          const accounts = await window.klaytn.enable();
+          console.log("accounts", accounts);
+          addr = accounts[0];
+        } catch (err) {
+          console.log("accounts err", err);
+          return;
+        }
+
+        wallet_addr = addr;
+        document.getElementById("wallet_addr").innerText = addr;
+
+        const url = "/api_wallet";
+        // const url = "http://localhost:53134/api_wallet";
+        const res = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            addr: addr,
+          }),
+        });
+        const resData = await res.json();
+        console.log("resData", resData);
+
+        document.getElementById("nft_count").innerText = resData.count;
+        document.getElementById("btn_discord_connect").disabled = false;
+        document.getElementById("btn_wallet").disabled = true;
+      }
+
       window.onload = async () => {
         const urlParams = new URLSearchParams(window.location.search);
         const code = urlParams.get("code");
+        if (code === null) return;
+
         console.log("code", code);
 
         const CLIENT_ID = "963338592489472010";
@@ -52,7 +125,8 @@
         });
 
         const userData = await userResult.json();
-        console.log("userResult", userData);
+        console.log("userData", userData);
+        discord_user_id = userData.id;
       };
     </script>
   </body>
