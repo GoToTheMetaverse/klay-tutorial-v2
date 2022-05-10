@@ -61,3 +61,17 @@ client.on("messageCreate", async (msg) => {
 
 client.login(token);
 console.log("login");
+
+const ROLE_ID_NFT = "973527998605185024";
+async function add_nft_role(user_id) {
+  console.log("add_nft_role", user_id);
+
+  const guild = client.guilds.cache.get(GUILD_ID);
+  const role = guild.roles.cache.get(ROLE_ID_NFT);
+  const member = await guild.members.fetch(user_id);
+  member.roles.add(role);
+}
+
+module.exports = {
+  add_nft_role,
+};
