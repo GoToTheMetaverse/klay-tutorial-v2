@@ -1,0 +1,16 @@
+{
+  "name": "klaytn-07",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "caver-js": "^1.8.1",
+    "discord.js": "^13.6.0",
+    "express": "^4.17.3"
+  }
+}
